@@ -44,6 +44,12 @@
     "FG": {
         "des": "Gates - Hillman bridge towards the computational biology department"
     },
+    "FH":{
+      "des":"*** go from F to H ***"
+    },
+    "HF":{
+      "des":"*** go from H to F ***"
+    },
     "GF": {
         "des": "Hillman - Gates bridge towards the elevators"
     },
@@ -83,12 +89,4 @@
     "GN": {
         "des": "hallway with rooms 7401 - 7411"
     }
-
-
-
-
-
-
-
-
 }
