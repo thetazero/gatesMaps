@@ -1,0 +1,38 @@
+{
+    "6IJ": {
+        "des": "up sketchy stairs to the 7th floor"
+    },
+    "J6I": {
+        "des": "down sketchy stairs to the 6th floor"
+    },
+    "6NN": {
+        "des": "up stairs to 7th floor"
+    },
+    "N6N": {
+        "des": "down stairs to 6th floor"
+    },
+    "6OO": {
+        "des": "into elevator and go up to 7th floor"
+    },
+    "O6O": {
+        "des": "into elevator and go down to 6th floor"
+    },
+    "6FF": {
+        "des": "into elevator and go up to 7th floor"
+    },
+    "F6F": {
+        "des": "into elevator and go down to 6th floor"
+    },
+    "6CH": {
+        "des": "up stairs to 7th floor"
+    },
+    "H6C": {
+        "des": "down stairs to 6th floor"
+    },
+    "6YA": {
+        "des": "up stairs to 7th floor"
+    },
+    "A6Y": {
+        "des": "down stairs to 6th floor"
+    }
+}
