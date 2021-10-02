@@ -33,7 +33,7 @@ app.get('/route/:from/:to', ({ params: { from, to } }, res) => {
   })
 })
 
-app.post('/route/:from/:to/:time', ({ params: { from, to, time }, body: { route } }, res) => {
+app.post('/route/:time', ({ params: { time }, body: { route } }, res) => {
   //body should contain route
   // update graph to show time changes
 })

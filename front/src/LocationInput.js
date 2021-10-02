@@ -26,12 +26,10 @@ export default function LocationInput({ navigate }) {
   }
   return (
     <form onSubmit={handleSubmit}>
-      <label>
-        Origin: <input type="text" {...bindFrom} />
-      </label>
-      <label>
-        Destination <input type="text" {...bindTo} />
-      </label>
+        <input placeholder="From" type="text" {...bindFrom} />
+      <br/>
+        <input placeholder="To" type="text" {...bindTo} />
+        <br/>
       <input type="submit" value="Submit" />
     </form>
   );
