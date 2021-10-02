@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors')
-const { getRoute, describeRoute, getNodes, getPathCost } = require('./graph')
+const { getRoute, describeRoute, getNodes, getPathCost, saveGraph } = require('./graph')
 
 const app = express()
 app.use(cors())
@@ -12,6 +12,12 @@ app.get('/', (req, res) => {
 
 app.get('/graph', (req, res) => {
   // send json of graph
+})
+
+// this is dumb delete >:(
+app.get('/save', (req, res) => {
+  saveGraph()
+  res.send("saved")
 })
 
 app.get('/nodes', (req, res) => {

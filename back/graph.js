@@ -1,7 +1,10 @@
 const Graph = require('node-dijkstra')
+const fs = require('fs')
 
 const floor1 = require('../data/sigma.json')
-const route = new Graph(floor1)
+const curGraph = require('./graphSave.json')
+let src = Object.keys(curGraph) == 0 ? floor1 : curGraph
+const route = new Graph(src)
 //const descriptionMap = get shit from json
 //route.graph.get('A').set('B', 2)
 
@@ -49,3 +52,18 @@ function updateRoute(path, time) {
 }
 
 module.exports.updateRoute = updateRoute
+
+function saveGraph() {
+  let data = {}
+  route.graph.forEach((edges, node1) => {
+    console.log(edges, node1)
+    edges.forEach((weight, node2) => {
+      if (data[node1] == null) data[node1] = {}
+      data[node1][node2] = weight
+    })
+  })
+  console.log(data)
+  data = JSON.stringify(data)
+  fs.writeFileSync('./graphSave.json', data)
+}
+module.exports.saveGraph = saveGraph
