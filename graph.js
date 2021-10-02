@@ -4,9 +4,11 @@ const fs = require('fs')
 //const floor1 = require('../data/sigma.json')
 const floor7 = require('./data/floor7-s.json')
 const floor6 = require('./data/floor6-s.json')
-const edgeLabels = { ...require('./data/floor7-edges.json'), ...require('./data/floor6-edges.json') }
+const connections = require('./data/connections.json')
+const edgeLabels = { ...require('./data/floor7-edges.json'), ...require('./data/floor6-edges.json'), ...require('./data/connections-descriptions.json') }
 const curGraph = require('./graphSave.json')
-let src = Object.keys(curGraph) == 0 ? [floor7, floor6] : [curGraph]
+const { isNumber } = require('util')
+let src = Object.keys(curGraph) == 0 ? [floor7, floor6, connections] : [curGraph]
 let route = new Graph(mergeGraphs(src))
 
 function mergeGraphs(arr) {
@@ -26,12 +28,17 @@ function hasEdge(a, b) {
   return route.graph.get(a).get(b) != null
 }
 
+function isNum(a) {
+  return !isNaN(parseInt(a))
+}
+
 function getRoute(from, to) {
   let path = route.path(from, to)
+  console.log(path)
   path = path.filter((e, i) => {
     //make sure that we only remove this node if it can be removed
     if (i > 0 && i < path.length - 1 && !hasEdge(path[i - 1], path[i + 1])) return true
-    return (i == 0 || i == path.length - 1 || e[0] != "7")
+    return (i == 0 || i == path.length - 1 || !isNum(e))
   })
   return path
 }
