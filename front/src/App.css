@@ -24,6 +24,11 @@ body {
  margin-top: 5px;
 }
 
+.directions{
+  text-align: left;
+  padding:10px 30px 10px 30px;
+}
+
 .title {
   font-weight: 100;
   font-size: 3em;
@@ -31,10 +36,6 @@ body {
   margin-bottom: 20px;
   color:rgb(240, 225, 12);
   font-family: Courier;
-}
-
-.main-input input {
-  width:calc(100vw 30px);
 }
 
 .time{
