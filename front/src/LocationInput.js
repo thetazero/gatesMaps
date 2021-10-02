@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export const useInput = initialValue => {
+export const useInput = (initialValue) => {
   const [value, setValue] = useState(initialValue);
 
   return {
@@ -17,20 +17,29 @@ export const useInput = initialValue => {
 }
 
 export default function LocationInput({ navigate }) {
-  const { value: from, bind: bindFrom } = useInput('');
-  const { value: to, bind: bindTo } = useInput('');
-
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    navigate(from, to)
+    if (started) {
+      resetFrom()
+      resetTo()
+      navigate('', '')
+    } else {
+      navigate(from, to)
+    }
+    setStarted(!started)
   }
+
+  const { value: from, bind: bindFrom, reset: resetFrom } = useInput('');
+  const { value: to, bind: bindTo, reset: resetTo } = useInput('');
+
+  const [started, setStarted] = useState(false)
+
   return (
-    <form onSubmit={handleSubmit}>
-        <input placeholder="From" type="text" {...bindFrom} />
-      <br/>
-        <input placeholder="To" type="text" {...bindTo} />
-        <br/>
-      <input type="submit" value="Submit" />
+    <form onSubmit={handleSubmit} className="main-input">
+      <input placeholder="From" type="text" {...bindFrom} />
+      <input placeholder="To" type="text" {...bindTo} />
+      <br />
+      <input className={started ? "stop circle" : "start circle"} type="submit" value={started ? "Finish" : "Start"} />
     </form>
   );
 }

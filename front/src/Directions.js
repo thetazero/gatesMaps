@@ -1,7 +1,4 @@
-import React, { useState } from "react";
-
-export default function LocationInput({ directions }) {
-
+export default function Directions({ directions }) {
   return (
     <>
       {directions.map((step,i) => {
