@@ -3,10 +3,15 @@ const fs = require('fs')
 
 //const floor1 = require('../data/sigma.json')
 const floor7 = require('../data/floor7-s.json')
+const floor6 = require('../data/floor6-s.json')
 const floor7Edges = require('../data/floor7-edges.json')
 const curGraph = require('./graphSave.json')
-let src = Object.keys(curGraph) == 0 ? floor7 : curGraph
-const route = new Graph(src)
+let src = Object.keys(curGraph) == 0 ? [floor7, floor6] : [curGraph]
+let nsrc = {}
+for (let i = 0; i < src.length; i++) {
+  nsrc = { ...nsrc, ...src[i] }
+}
+let route = new Graph(nsrc)
 
 function hasEdge(a, b) {
   return route.graph.get(a).get(b) != null
