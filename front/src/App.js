@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
-
 import './App.css';
+import {ip} from "./config"
 
 import LocationInput from './LocationInput';
 import Directions from './Directions';
-import GatesMap from './GatesMap'
-import { formatTime, niceNumber } from './utils'
-
-const ip = 'http://localhost:4200'
+import { niceNumber } from './utils'
 
 function App() {
   const [time, setTime] = useState(0)
@@ -53,7 +50,10 @@ function App() {
   }
   return (
     <div className="App">
-      <div className="title">Gates Maps</div>
+        <div className="title">
+        Gates Map
+        </div>
+
       <LocationInput navigate={navigate}></LocationInput>
 
       <div className="time">
