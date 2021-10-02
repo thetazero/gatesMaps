@@ -1,0 +1,110 @@
+{
+    "6G6N": {
+        "des": "through 6401 - 6417 hallway"
+    },
+    "6N6G": {
+        "des": "through 6401 - 6417 hallway towards Hillman-Gates walk-through"
+    },
+    "6G6I": {
+        "des": "through hallway towards sketchy stairs and rooms 6501 - 6515"
+    },
+    "6I6G": {
+        "des": "through hallway towards Hillman-Gates walk-through"
+    },
+    "6I6J": {
+        "des": "through hallway with rooms 6503 - 6515"
+    },
+    "6J6I": {
+        "des": "through hallway with rooms 6503 - 6515"
+    },
+    "6J6K": {
+        "des": "past sketchy stairs"
+    },
+    "6K6J": {
+        "des": "past sketchy stairs"
+    },
+    "6K6G": {
+        "des": "through hallway with rooms 6601 - 6609 towards Hillman-Gates walk-through"
+    },
+    "6G6K": {
+        "des": "through hallway with rooms 6501 - 6609"
+    },
+    "6K6O": {
+        "des": "through hallway with rooms 6701 - 6712 towards restrooms"
+    },
+    "6O6K": {
+        "des": "through hallway with rooms 6701 - 6712 towards restrooms"
+    },
+    "6O6N": {
+        "des": "through hallway with room 6414"
+    },
+    "6N6O": {
+        "des": "through hallway withr room 6418"
+    },
+    "6G6F": {
+        "des": "through Hillman-Gates walk-through towards elevators"
+    },
+    "6F6G": {
+        "des": "through Gates-Hillman walk-through"
+    },
+    "6F6E": {
+        "des": "through hallway leading to rooms 6221 - 6227"
+    },
+    "6E6F": {
+        "des": "through hallway leading to the elevators and the Gates-Hillman walk-through"
+    },
+    "6F6D": {
+        "des": "through hallway with a pillar surounded by seating in the middle"
+    },
+    "6D6F": {
+        "des": "through hallway with a pillar surounded by seating in the middle"
+    },
+    "6E6C": {
+        "des": "through hallway with rooms 6211 - 6221 and then past the seating area and towards the kitchenette"
+    },
+    "6C6E": {
+        "des": "past the small seating area (not the large one) and towards rooms 6211 - 6221"
+    },
+    "6C6B": {
+        "des": "past the kitchenette towards the large seating area"
+    },
+    "6B6C": {
+        "des": "past the kitchenette towards the small seating area"
+    },
+    "6C6F": {
+        "des": "past the bathrooms towards the elevators"
+    },
+    "6F6C": {
+        "des": "past the elevators towards the bathrooms"
+    },
+    "6B6A": {
+        "des": "towards the vending machines where the dean's office immediately follows"
+    },
+    "6A6B": {
+        "des": "past the dean's office and the vending machine towards the large seating area"
+    },
+    "6A6D": {
+        "des": "past the dean's office"
+    },
+    "6D6A": {
+        "des": "towards the sign that indicates rooms 6109 - 6111"
+    },
+    "6C6Y": {
+        "des": "through the hallway with the gates roof on the right side"
+    },
+    "6Y6C": {
+        "des": "through the hallway with the gates roof on the left side"
+    },
+    "6Y6X": {
+        "des": "through the hallway with rooms 6001 - 6010"
+    },
+    "6W6X": {
+        "des": "out of the hallway with rooms 6001 - 6010"
+    },
+    "6Y6W": {
+        "des": "through the hallway with rooms 6013 - 6023"
+    },
+    "6W6Y": {
+        "des": "out of the hallway with rooms 6013 - 6024"
+    }
+}
