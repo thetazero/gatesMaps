@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 
 import './App.css';
+import {ip} from "./config"
 
 import LocationInput from './LocationInput';
 import Directions from './Directions';
-import GatesMap from './GatesMap'
-import { formatTime, niceNumber } from './utils'
-
-// const ip = 'http://localhost:4200'
-const ip = ''
+import { niceNumber } from './utils'
 
 function App() {
   const [time, setTime] = useState(0)

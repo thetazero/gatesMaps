@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ip } from "./config";
 
 export const useInput = (initialValue) => {
   const [value, setValue] = useState(initialValue);
