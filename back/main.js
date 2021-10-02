@@ -14,16 +14,6 @@ app.get('/', (req, res) => {
   res.send('Hello world!')
 })
 
-app.get('/graph', (req, res) => {
-  // send json of graph
-})
-
-// this is dumb delete >:(
-app.get('/save', (req, res) => {
-  saveGraph()
-  res.send("saved")
-})
-
 app.get('/nodes', (req, res) => {
   res.json(getNodes())
 })
@@ -37,7 +27,6 @@ app.get('/route/:from/:to', ({ params: { from, to } }, res) => {
   })
 })
 
-//app.post('/route/:time', ({ params: { time }, body: { route } }, res) => {
 app.post('/route', ({ body: { route, time } }, res) => {
   let newTime = updateRoute(route, time)
   saveGraph()
