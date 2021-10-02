@@ -36,10 +36,10 @@ export default function LocationInput({ navigate }) {
 
   return (
     <form onSubmit={handleSubmit} className="main-input">
-      <input placeholder="From" type="text" {...bindFrom} />
-      <input placeholder="To" type="text" {...bindTo} />
+      <input className = "inputBox" placeholder="From" type="text" {...bindFrom} />
+      <input className= "inputBox" placeholder="To" type="text" {...bindTo} />
       <br />
-      <input className={started ? "stop circle" : "start circle"} type="submit" value={started ? "Finish" : "Start"} />
+      <input className="inputBox2" type="submit" value={started ? "Finish" : "Start"} />
     </form>
   );
 }

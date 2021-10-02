@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-
 import './App.css';
 
 import LocationInput from './LocationInput';
 import Directions from './Directions';
 import { formatTime, niceNumber } from './utils'
+
+import cmu from './carnegie-mellon.png'
 
 const ip = 'http://localhost:4200'
 
@@ -38,7 +39,10 @@ function App() {
   }
   return (
     <div className="App">
-      <div className="title">Gates Maps</div>
+        <div className="title">
+        Gates Map
+        </div>
+
       <LocationInput navigate={navigate}></LocationInput>
 
       <div className="time">
