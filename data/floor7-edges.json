@@ -1,92 +1,98 @@
 {
     "AB": {
-        "des": "7201 - 7207 hallway with windows on the left"
+        "des": "through 7201 - 7207 hallway with windows on the left"
     },
     "BA": {
-        "des": "7201 - 7207 hallway with windows on the right"
+        "des": "through 7201 - 7207 hallway with windows on the right"
     },
     "BC": {
-        "des": "hallway with faceboard"
+        "des": "through hallway with faceboard"
     },
     "CB": {
-        "des": "hallway with faceboard"
+        "des": "through hallway with faceboard"
     },
     "BH": {
-        "des": "hallway with kitchen and seating on the right"
+        "des": "past room 7207"
     },
     "HB": {
-        "des": "hallway with room 7207 on the left"
+        "des": "past room 7207"
     },
     "HE": {
-        "des": "hallway with kitchen and seating and rooms 7211 - 7217 following"
+        "des": "through hallway with kitchen and seating and continue through hallway with rooms 7211 - 7217 following"
     },
     "EH": {
-        "des": "hallway with rooms 7211 - 7217 and an area with kitchen and seating following"
+        "des": "through hallway with rooms 7211 - 7217 continue past the area area with kitchen and seating"
     },
     "EF": {
-        "des": "hallway with rooms 7223 - 7227"
+        "des": "through hallway with rooms 7223 - 7227"
     },
     "FE": {
-        "des": "hallway with rooms 7211 - 7227"
+        "des": "through hallway with rooms 7211 - 7227"
     },
     "FD": {
-        "des": "hallway with rooms 7101 - 7129"
+        "des": "through hallway with rooms 7101 - 7129"
     },
     "DF": {
-        "des": "hallway marked with a sign that says \"Elevators\" and with rooms 7119 - 7129"
+        "des": "through hallway marked with a sign that says \"Elevators\" and with rooms 7119 - 7129"
     },
     "DC": {
-        "des": "hallway with a lot of seating and a large staircase in the middle"
+        "des": "through hallway with a lot of seating and a large staircase in the middle"
     },
     "CD": {
-        "des": "hallway with a lot of seating and a large staircase in the middle"
+        "des": "through hallway with a lot of seating and a large staircase in the middle"
     },
     "FG": {
-        "des": "Gates - Hillman bridge towards the computational biology department"
+        "des": "through Gates - Hillman bridge towards the computational biology department"
     },
     "FH":{
-      "des":"*** go from F to H ***"
+      "des":"past elevators"
     },
     "HF":{
-      "des":"*** go from H to F ***"
+      "des":"past bathrooms"
     },
     "GF": {
-        "des": "Hillman - Gates bridge towards the elevators"
+        "des": "through Hillman - Gates bridge towards the elevators"
     },
     "GI": {
-        "des": "hallway leadin to the 7500 rooms"
+        "des": "through hallway leading to the 7500 rooms"
     },
     "IG": {
-        "des": "hallway leading to the Hillman - Gates bridge"
+        "des": "through hallway leading to the Hillman - Gates bridge"
     },
     "IJ": {
-        "des": "hallway with rooms 7505 - 7517"
+        "des": "through hallway with rooms 7505 - 7517"
     },
     "JI": {
-        "des": "hallway with rooms 7505 - 7517"
+        "des": "through hallway with rooms 7505 - 7517"
     },
     "JK": {
-        "des": "hallway with rooms 7701 and 7703"
+        "des": "towards rooms 7701 and 7703"
     },
     "KJ": {
-        "des": "hallway with rooms 7701 and 7703"
+        "des": "towards 7701 and 7703"
     },
     "KO": {
-        "des": "hallway with rooms 7705 - 7725"
+        "des": "through hallway with rooms 7705 - 7725"
     },
     "OK": {
-        "des": "hallway with rooms 7705 - 7725"
+        "des": "through hallway with rooms 7705 - 7725"
     },
     "ON": {
-        "des": "hallway with rooms 7414 and 7416"
+        "des": "through hallway with rooms 7414 and 7416"
     },
     "NO": {
-        "des": "hallway with rooms 7414 and 7416"
+        "des": "through hallway with rooms 7414 and 7416"
     },
     "NG": {
-        "des": "hallway with rooms 7411 - 7401"
+        "des": "through hallway with rooms 7411 - 7401"
     },
     "GN": {
-        "des": "hallway with rooms 7401 - 7411"
+        "des": "through hallway with rooms 7401 - 7411"
+    },
+    "AP": {
+        "des": "through 7000 hallway"
+    },
+    "PA": {
+        "des": "out of 7000 hallway"
     }
 }

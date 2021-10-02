@@ -27,7 +27,8 @@ function describeRoute(nodes) {
   let description = []
   for (let i = 1; i < nodes.length - 2; i++) {
     let edge = nodes[i] + nodes[i + 1]
-    description.push(`Turn towards ${floor7Edges[edge].des}.`)
+    console.log(edge)
+    description.push(`Walk ${floor7Edges[edge].des}.`)
   }
   description.push(`End at ${nodes[nodes.length - 1]}.`)
   return description
