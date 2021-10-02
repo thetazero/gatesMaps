@@ -1,7 +1,9 @@
 const express = require('express')
-const { getRoute, describeRoute, getNodes } = require('./graph')
+const cors = require('cors')
+const { getRoute, describeRoute, getNodes, getPathCost } = require('./graph')
 
 const app = express()
+app.use(cors())
 const port = 4200
 
 app.get('/', (req, res) => {
@@ -19,8 +21,9 @@ app.get('/nodes', (req, res) => {
 app.get('/route/:from/:to', ({ params: { from, to } }, res) => {
   let route = getRoute(from, to)
   let description = describeRoute(route)
+  let time = getPathCost(route)
   res.json({
-    route, description
+    route, description, time
   })
 })
 

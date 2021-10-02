@@ -11,6 +11,7 @@ function getRoute(from, to) {
 module.exports.getRoute = getRoute
 
 function describeRoute(nodes) {
+  //@saftey and correctness
   let description = []
   description.push(`Start at ${nodes[0]}.`)
   for (let i = 0; i < nodes.length - 1; i++) {
@@ -18,6 +19,7 @@ function describeRoute(nodes) {
     description.push(`Turn towards ${edge}`)
   }
   description.push(`End at ${nodes[nodes.length - 1]}`)
+  return description
 }
 module.exports.describeRoute = describeRoute
 
@@ -33,13 +35,16 @@ function getPathCost(path) {
   }
   return cost
 }
+module.exports.getPathCost = getPathCost
 
 function updateRoute(path, time) {
   let expectedCost = getPathCost(path)
   let penalty = time - expectedCost
   for (let i = 0; i < path.length - 1; i++) {
     let cur = route.graph.get(path[i]).get(path[i + 1])
-    route.graph.get(path[i]).set(path[i + 1], cur + penalty * cur / expectedCost)
+    let newCost = cur + penalty * cur / expectedCost
+    route.graph.get(path[i]).set(path[i + 1], newCost)
+    route.graph.get(path[i + 1]).set(path[i], newCost)
   }
 }
 
