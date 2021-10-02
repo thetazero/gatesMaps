@@ -3,13 +3,13 @@
         "des": "through 6401 - 6417 hallway"
     },
     "6N6G": {
-        "des": "through 6401 - 6417 hallway towards Hillman-Gates walk-through"
+        "des": "through 6401 - 6417 hallway towards Hillman-Gates bridge"
     },
     "6G6I": {
         "des": "through hallway towards sketchy stairs and rooms 6501 - 6515"
     },
     "6I6G": {
-        "des": "through hallway towards Hillman-Gates walk-through"
+        "des": "through hallway towards Hillman-Gates bridge"
     },
     "6I6J": {
         "des": "through hallway with rooms 6503 - 6515"
@@ -24,7 +24,7 @@
         "des": "past sketchy stairs"
     },
     "6K6G": {
-        "des": "through hallway with rooms 6601 - 6609 towards Hillman-Gates walk-through"
+        "des": "through hallway with rooms 6601 - 6609 towards Hillman-Gates bridge"
     },
     "6G6K": {
         "des": "through hallway with rooms 6501 - 6609"
@@ -42,16 +42,16 @@
         "des": "through hallway with room 6418"
     },
     "6G6F": {
-        "des": "through Hillman-Gates walk-through towards elevators"
+        "des": "through Hillman-Gates bridge towards elevators"
     },
     "6F6G": {
-        "des": "through Gates-Hillman walk-through"
+        "des": "through Gates-Hillman bridge"
     },
     "6F6E": {
         "des": "through hallway leading to rooms 6221 - 6227"
     },
     "6E6F": {
-        "des": "through hallway leading to the elevators and the Gates-Hillman walk-through"
+        "des": "through hallway leading to the elevators and the Gates-Hillman bridge"
     },
     "6F6D": {
         "des": "through hallway with a pillar surounded by seating in the middle"
