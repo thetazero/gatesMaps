@@ -1,0 +1,94 @@
+{
+    "AB": {
+        "des": "7201 - 7207 hallway with windows on the left"
+    },
+    "BA": {
+        "des": "7201 - 7207 hallway with windows on the right"
+    },
+    "BC": {
+        "des": "hallway with faceboard"
+    },
+    "CB": {
+        "des": "hallway with faceboard"
+    },
+    "BH": {
+        "des": "hallway with kitchen and seating on the right"
+    },
+    "HB": {
+        "des": "hallway with room 7207 on the left"
+    },
+    "HE": {
+        "des": "hallway with kitchen and seating and rooms 7211 - 7217 following"
+    },
+    "EH": {
+        "des": "hallway with rooms 7211 - 7217 and an area with kitchen and seating following"
+    },
+    "EF": {
+        "des": "hallway with rooms 7223 - 7227"
+    },
+    "FE": {
+        "des": "hallway with rooms 7211 - 7227"
+    },
+    "FD": {
+        "des": "hallway with rooms 7101 - 7129"
+    },
+    "DF": {
+        "des": "hallway marked with a sign that says \"Elevators\" and with rooms 7119 - 7129"
+    },
+    "DC": {
+        "des": "hallway with a lot of seating and a large staircase in the middle"
+    },
+    "CD": {
+        "des": "hallway with a lot of seating and a large staircase in the middle"
+    },
+    "FG": {
+        "des": "Gates - Hillman bridge towards the computational biology department"
+    },
+    "GF": {
+        "des": "Hillman - Gates bridge towards the elevators"
+    },
+    "GI": {
+        "des": "hallway leadin to the 7500 rooms"
+    },
+    "IG": {
+        "des": "hallway leading to the Hillman - Gates bridge"
+    },
+    "IJ": {
+        "des": "hallway with rooms 7505 - 7517"
+    },
+    "JI": {
+        "des": "hallway with rooms 7505 - 7517"
+    },
+    "JK": {
+        "des": "hallway with rooms 7701 and 7703"
+    },
+    "KJ": {
+        "des": "hallway with rooms 7701 and 7703"
+    },
+    "KO": {
+        "des": "hallway with rooms 7705 - 7725"
+    },
+    "OK": {
+        "des": "hallway with rooms 7705 - 7725"
+    },
+    "ON": {
+        "des": "hallway with rooms 7414 and 7416"
+    },
+    "NO": {
+        "des": "hallway with rooms 7414 and 7416"
+    },
+    "NG": {
+        "des": "hallway with rooms 7411 - 7401"
+    },
+    "GN": {
+        "des": "hallway with rooms 7401 - 7411"
+    }
+
+
+
+
+
+
+
+
+}
