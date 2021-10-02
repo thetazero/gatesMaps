@@ -15,18 +15,18 @@ body {
 }
 
 .top {
-  flex-direction:row
+  flex-direction: row;
 }
 
 .images {
- width: 50px;
- height: 50px;
- margin-top: 5px;
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
 }
 
-.directions{
+.directions {
   text-align: left;
-  padding:10px 30px 10px 30px;
+  padding: 10px 30px 10px 30px;
 }
 
 .title {
@@ -34,57 +34,61 @@ body {
   font-size: 3em;
   margin-top: 25px;
   margin-bottom: 20px;
-  color:rgb(240, 225, 12);
+  color: rgb(240, 225, 12);
   font-family: Courier;
 }
 
-.time{
+.time {
   font-size: 3em;
-  margin:25px;
-  color:rgb(240, 225, 12);
+  margin: 25px;
+  color: rgb(240, 225, 12);
 }
 
-
 .App-link {
-  color:rgb(112, 173, 252);
+  color: rgb(112, 173, 252);
   font-family: Courier;
 }
 
 input[type="button"],
 input[type="submit"] {
   cursor: pointer;
+  text-align: center;
 }
 
 .inputBox {
- color:rgb(112, 173, 252);
- margin: 10px;
- margin-bottom: 18px;
- border-style: solid;
- border-width: 2px;
- font-family: Courier;
+  color: rgb(112, 173, 252);
+  margin: 10px;
+  margin-bottom: 18px;
+  border-style: solid;
+  border-width: 2px;
+  font-family: Courier;
 }
 
 .inputBox2 {
-  color:rgb(112, 173, 252);
+  color: rgb(112, 173, 252);
   margin: 0px;
   border-style: solid;
   border-width: 2px;
   font-family: Courier;
- }
+}
 
 ::placeholder {
-  color:rgb(112, 173, 252);
+  color: rgb(112, 173, 252);
   font-family: Courier;
+}
+
+input[type="text"] {
+  width: 90px;
 }
 
 input {
   background: hsl(200, 10%, 17%);
   outline: none;
   border: none;
-  color:rgb(112, 173, 252);
+  color: rgb(112, 173, 252);
   font-size: 18px;
   padding: 10px 30px 10px 30px;
-  width: 100px;
+  /* width: 100px; */
   font-family: Courier;
 }
 

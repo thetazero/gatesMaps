@@ -34,6 +34,7 @@ function App() {
       setTimer(0)
       setTime(0)
       setPath([])
+      setDirections([])
     } else {
       let data = await fetch(`${ip}/route/${from}/${to}`)
       data = await data.json()
@@ -60,14 +61,14 @@ function App() {
         {niceNumber(timer / 1000, 1)} / {niceNumber(time, 1)} s
       </div>
       <Directions directions={directions} />
-      <a
+      {/* <a
         className="App-link"
         href="https://www.cmu.edu/finance/property-space/floorplan-room/acad-admin/GHC/index.html"
         target="_blank"
         rel="noopener noreferrer"
       >
         Gates Map
-      </a>
+      </a> */}
     </div>
   );
 }
