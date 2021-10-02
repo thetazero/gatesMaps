@@ -1,27 +1,34 @@
 const Graph = require('node-dijkstra')
 const fs = require('fs')
 
-const floor1 = require('../data/sigma.json')
+//const floor1 = require('../data/sigma.json')
+const floor7 = require('../data/floor7.json')
+const floor7Edges = require('../data/floor7-edges.json') 
 const curGraph = require('./graphSave.json')
-let src = Object.keys(curGraph) == 0 ? floor1 : curGraph
+let src = Object.keys(curGraph) == 0 ? floor7 : curGraph
 const route = new Graph(src)
 //const descriptionMap = get shit from json
 //route.graph.get('A').set('B', 2)
 
 function getRoute(from, to) {
-  return route.path(from, to)
+  let route = route.path(from, to)
+  for (let i = 1; i < route.length - 1; i++) {
+    if (!route[i].startsWith("7")) {
+      route.splice(i, 1)
+    }
+  }
+  return route
 }
 module.exports.getRoute = getRoute
 
 function describeRoute(nodes) {
   //@saftey and correctness
   let description = []
-  description.push(`Start at ${nodes[0]}.`)
   for (let i = 0; i < nodes.length - 1; i++) {
     let edge = nodes[i] + nodes[i + 1]
-    description.push(`Turn towards ${edge}`)
+    description.push(`Turn towards ${floor7Edges.edge.des}.`)
   }
-  description.push(`End at ${nodes[nodes.length - 1]}`)
+  description.push(`End at ${nodes[nodes.length - 1]}.`)
   return description
 }
 module.exports.describeRoute = describeRoute
