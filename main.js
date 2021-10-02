@@ -6,7 +6,7 @@ const app = express()
 
 app.use(cors())
 app.use(express.json())
-const port = 8080
+const port = process.argv[2] 
 
 app.use(express.static('./front/build/'))
 
