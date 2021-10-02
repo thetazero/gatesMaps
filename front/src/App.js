@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import './App.css';
 import {ip} from "./config"
 
@@ -51,7 +50,10 @@ function App() {
   }
   return (
     <div className="App">
-      <div className="title">Gates Maps</div>
+        <div className="title">
+        Gates Map
+        </div>
+
       <LocationInput navigate={navigate}></LocationInput>
 
       <div className="time">

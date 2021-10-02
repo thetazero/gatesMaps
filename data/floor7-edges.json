@@ -94,5 +94,11 @@
     },
     "PA": {
         "des": "out of 7000 hallway"
+    },
+    "GK": {
+        "des": "through hallway with rooms 7601 - 7609"
+    },
+    "KG": {
+        "des": "through hallway with rooms 7601 - 7609"
     }
 }
