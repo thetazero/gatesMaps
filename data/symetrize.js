@@ -1,5 +1,5 @@
-const input = "./floor7"
-const output = "./floor7-s.json"
+const input = "./floor6"
+const output = "./floor6-s.json"
 
 const fs = require('fs')
 
