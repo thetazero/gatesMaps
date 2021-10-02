@@ -4,14 +4,23 @@ const fs = require('fs')
 //const floor1 = require('../data/sigma.json')
 const floor7 = require('./data/floor7-s.json')
 const floor6 = require('./data/floor6-s.json')
-const floor7Edges = require('./data/floor7-edges.json')
+const edgeLabels = { ...require('./data/floor7-edges.json'), ...require('./data/floor6-edges.json') }
 const curGraph = require('./graphSave.json')
 let src = Object.keys(curGraph) == 0 ? [floor7, floor6] : [curGraph]
-let nsrc = {}
-for (let i = 0; i < src.length; i++) {
-  nsrc = { ...nsrc, ...src[i] }
+let route = new Graph(mergeGraphs(src))
+
+function mergeGraphs(arr) {
+  let r = {}
+  arr.forEach(graph => {
+    for (let v1 in graph) {
+      for (let v2 in graph[v1]) {
+        if (r[v1] == null) r[v1] = {}
+        r[v1][v2] = graph[v1][v2]
+      }
+    }
+  })
+  return r
 }
-let route = new Graph(nsrc)
 
 function hasEdge(a, b) {
   return route.graph.get(a).get(b) != null
@@ -33,7 +42,7 @@ function describeRoute(nodes) {
   for (let i = 1; i < nodes.length - 2; i++) {
     let edge = nodes[i] + nodes[i + 1]
     console.log(edge)
-    description.push(`Walk ${floor7Edges[edge].des}.`)
+    description.push(`Walk ${edgeLabels[edge].des}.`)
   }
   description.push(`End at ${nodes[nodes.length - 1]}.`)
   return description
@@ -62,7 +71,7 @@ function updateRoute(path, time) {
     let cur = route.graph.get(path[i]).get(path[i + 1])
     let newCost = cur + (penalty * cur / expectedCost) * weight
     route.graph.get(path[i]).set(path[i + 1], newCost)
-    route.graph.get(path[i + 1]).set(path[i], newCost)
+    // route.graph.get(path[i + 1]).set(path[i], newCost)
   }
   return getPathCost(path)
 }

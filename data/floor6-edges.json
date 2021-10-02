@@ -39,7 +39,7 @@
         "des": "through hallway with room 6414"
     },
     "6N6O": {
-        "des": "through hallway withr room 6418"
+        "des": "through hallway with room 6418"
     },
     "6G6F": {
         "des": "through Hillman-Gates walk-through towards elevators"
@@ -97,6 +97,9 @@
     },
     "6Y6X": {
         "des": "through the hallway with rooms 6001 - 6010"
+    },
+    "6X6Y": {
+        "des": "out of the hallway with rooms 6001 - 6010"
     },
     "6W6X": {
         "des": "out of the hallway with rooms 6001 - 6010"
