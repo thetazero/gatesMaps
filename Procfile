@@ -1,1 +1,1 @@
-web: cd back && npm i && node main.js
+web: node main.js 
