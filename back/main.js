@@ -1,5 +1,5 @@
 const express = require('express')
-const { getRoute, describeRoute } = require('./graph')
+const { getRoute, describeRoute, getNodes } = require('./graph')
 
 const app = express()
 const port = 4200
@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
 
 app.get('/graph', (req, res) => {
   // send json of graph
+})
+
+app.get('/nodes', (req, res) => {
+  res.json(getNodes())
 })
 
 app.get('/route/:from/:to', ({ params: { from, to } }, res) => {
