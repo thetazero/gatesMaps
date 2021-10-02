@@ -52,7 +52,7 @@ function App() {
   return (
     <div className="App">
       <div className="title">
-        Gates Map
+        Gates Maps
       </div>
 
       <LocationInput navigate={navigate}></LocationInput>
