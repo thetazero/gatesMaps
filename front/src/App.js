@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import {ip} from "./config"
+import { ip } from "./config"
 
 import LocationInput from './LocationInput';
 import Directions from './Directions';
@@ -51,9 +51,9 @@ function App() {
   }
   return (
     <div className="App">
-        <div className="title">
+      <div className="title">
         Gates Map
-        </div>
+      </div>
 
       <LocationInput navigate={navigate}></LocationInput>
 
@@ -69,6 +69,7 @@ function App() {
       >
         Gates Map
       </a> */}
+      <footer style={{ position: 'absolute', bottom: '10px', color: 'grey', width: "100vw", fontSize: '0.8em' }}>(6th/7th floors only)</footer>
     </div>
   );
 }
