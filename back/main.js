@@ -1,9 +1,11 @@
 const express = require('express')
 const cors = require('cors')
-const { getRoute, describeRoute, getNodes, getPathCost, saveGraph } = require('./graph')
+const { getRoute, describeRoute, getNodes, getPathCost, saveGraph, updateRoute } = require('./graph')
 
 const app = express()
+
 app.use(cors())
+app.use(express.json())
 const port = 4200
 
 app.get('/', (req, res) => {
@@ -33,9 +35,11 @@ app.get('/route/:from/:to', ({ params: { from, to } }, res) => {
   })
 })
 
-app.post('/route/:time', ({ params: { time }, body: { route } }, res) => {
-  //body should contain route
-  // update graph to show time changes
+//app.post('/route/:time', ({ params: { time }, body: { route } }, res) => {
+app.post('/route', ({ body: { route, time } }, res) => {
+  let newTime = updateRoute(route, time)
+  saveGraph()
+  res.send({ time: newTime })
 })
 
 app.listen(port, () => {
