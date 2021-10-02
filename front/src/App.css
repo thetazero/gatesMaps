@@ -21,10 +21,6 @@ body {
   margin-bottom: 20px;
 }
 
-.main-input input {
-  width:calc(100vw 30px);
-}
-
 .time{
   font-size: 3em;
   margin:25px;

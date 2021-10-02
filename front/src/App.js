@@ -7,7 +7,8 @@ import Directions from './Directions';
 import GatesMap from './GatesMap'
 import { formatTime, niceNumber } from './utils'
 
-const ip = 'http://localhost:4200'
+// const ip = 'http://localhost:4200'
+const ip = ''
 
 function App() {
   const [time, setTime] = useState(0)

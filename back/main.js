@@ -8,6 +8,8 @@ app.use(cors())
 app.use(express.json())
 const port = 4200
 
+app.use(express.static('../front/build/'))
+
 app.get('/', (req, res) => {
   res.send('Hello world!')
 })
